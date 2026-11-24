@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f3">
+  <meta name="description" content="Mon carnet de développement en BTS SIO SLAM. Découvrez Korok-Swap, Truffle et mon univers entre jeux vidéo et Girondins de Bordeaux.">
+  <title>Carnet de dev · Portfolio BTS SIO SLAM</title>
+  <link rel="icon" href="./images/pixel.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./projets.js"></script>
+  <script defer src="./commun.js"></script>
+  <script defer src="./portfolio.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header id="accueil"><div class="wrap bar">
+    <a class="brand" href="#accueil"><img src="./images/pixel.svg" width="34" height="32" alt="">Carnet de dev<span>.</span></a>
+    <nav aria-label="Navigation principale"><a href="#accueil" aria-current="location">Accueil</a><a href="#projets">Projets</a><a href="./a-propos.html">À propos</a></nav>
+    <span class="status"><i></i> En formation</span>
+  </div></header>
+  <main id="contenu">
+    <section class="hero" aria-labelledby="titre"><div class="wrap intro">
+      <div class="hero-copy"><p class="eyebrow"><span class="short-line"></span> PORTFOLIO · BTS SIO SLAM</p>
+        <h1 id="titre">Du code<br>&amp; des <em>pixels.</em></h1>
+        <p class="lead">Bienvenue dans mon carnet de dev. J’y partage mes projets de BTS, entre passion du jeu vidéo et amour des Girondins de Bordeaux.</p>
+        <div class="actions"><a class="button primary" href="#projets">Voir mes projets <span aria-hidden="true">↘</span></a><a class="text-link" href="./a-propos.html">À propos de moi <span aria-hidden="true">→</span></a></div>
+      </div>
+      <figure class="window">
+        <div class="window-bar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span>matmut.png</span><span class="expand-mark" aria-hidden="true">⌗</span></div>
+        <img class="landscape" src="./images/matmut.png" width="320" height="184" alt="Le Matmut en pixel art au coucher du soleil. La lumière dorée traverse les fines colonnes du stade, devant le parvis où arrivent des supporters.">
+        <figcaption><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Matmut Atlantique, Bordeaux</span><span class="pixel-caption">PIXEL ART</span></figcaption>
+      </figure>
+    </div></section>
+    <section id="projets" class="projects wrap" aria-labelledby="projets-titre">
+      <p class="eyebrow"><span class="short-line"></span> RÉALISATIONS</p>
+      <div class="project-heading"><h2 id="projets-titre">Mes projets<span class="punct">.</span></h2><div class="filters" role="group" aria-label="Filtrer les projets"></div></div>
+      <div class="card-grid" id="liste"></div><noscript>Active JavaScript pour parcourir les fiches projets.</noscript><p id="annonce" class="sr" aria-live="polite"></p>
+    </section>
+    <section id="profil" class="about" aria-labelledby="profil-titre"><div class="wrap about-grid">
+      <div><p class="eyebrow"><span class="short-line"></span> MON PARCOURS</p><h2 id="profil-titre">À propos<span class="punct">.</span></h2><p>En BTS SIO, option SLAM, j’apprends à construire des applications. Ce carnet rassemble les interfaces, les API et les expériences de traitement de données que je développe au fil de ma formation.</p><a class="text-link profil-plus" href="./a-propos.html">Découvrir mon parcours →</a></div>
+      <div class="passions"><h3>En dehors du code</h3><div class="passion"><span class="passion-icon football" aria-hidden="true">⚽︎</span><div><h4>Les Girondins de Bordeaux</h4><p>Le marine et blanc, jusque dans mon carnet.</p></div></div>
+      <div class="passion"><span class="passion-icon" aria-hidden="true"><img src="./images/pixel.svg" alt="" width="29" height="27"></span><div><h4>Les jeux vidéo</h4><p>Un goût pour les mondes à explorer et les décors en pixels.</p></div></div></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap"><span>Carnet de dev. <span class="footer-detail">/ BTS SIO SLAM</span></span><a href="#accueil">Retour en haut ↑</a></div></footer>
+  <dialog id="fiche" aria-labelledby="fiche-titre"><div class="dialog-bar"><span>FICHE PROJET</span><button type="button" id="fermer" aria-label="Fermer la fiche">✕</button></div><div id="fiche-contenu" class="dialog-inner"></div></dialog>
+</body></html>
